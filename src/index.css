@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-primary: "Inter", "sans-serif";
+  --color-dark-white: "#EBECF3";
+  --color-light-black: "#0B0B0B";
+  --color-lb-blue: "#007BFF";
+  --color-dark-gray: "#8F9094";
+}
+/* #000000 */
+
+* {
+  transition: all 0.2s linear;
+}
+body {
+  font-family: "Inter", "serif";
+  background-color: #fafaff;
+}
+
+@layer utilities {
+  .dark-gray {
+    color: #8f9094;
+  }
+
+  .lb-blue {
+    color: "#007BFF";
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
