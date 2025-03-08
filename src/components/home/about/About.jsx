@@ -14,7 +14,7 @@ function About() {
     <ContactWrapper id="about">
       <div className="max-w-6xl mx-auto sm:px-4 px-4 md:px-6 lg:px-14 text-black">
         <Heading title={"About Me"} />
-        <div className="bg-white md:px-32 px-12 py-10 shadow-md rounded-md">
+        <div className="bg-white md:px-32 px-5 py-10 shadow-md rounded-md">
           <Image
             src="https://i.ibb.co.com/MkPHBBRK/Black-Pattern-Minimalist-Linked-In-Profile-Picture-removebg-preview.png"
             alt="me"

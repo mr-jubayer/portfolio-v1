@@ -6,17 +6,16 @@ import { motion } from "motion/react";
 
 function Banner() {
   return (
-    <div className="bg-[#151418] ">
+    <div className="bg-[#151418]  ">
       <div className="  flex flex-col items-center   text-center justify-center max-w-6xl mx-auto sm:px-4 px-4 md:px-6 lg:px-14">
         <div className="grid  justify-center">
           <div>
             <motion.img
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              // viewport={{ once: true }}
               src={myPic}
               alt="my image"
-              className=" md:h-60 h-44 aspect-square  rounded-full border-white border-4 object-cover mt-6"
+              className=" md:h-60 h-44 aspect-square  rounded-full border-white border-4 object-cover md:mt-10 sm:mt-20 mt-24"
             />
           </div>
         </div>

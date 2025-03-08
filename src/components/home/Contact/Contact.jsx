@@ -54,7 +54,7 @@ function Contact() {
     <ContactWrapper id="contact">
       <div className="max-w-6xl mx-auto sm:px-4 px-4 md:px-6 lg:px-14 ">
         <Heading title={"Get In Touch"} />
-        <div className="shadow-md md:px-28 bg-white py-12 rounded-md">
+        <div className="shadow-md md:px-28 px-5 bg-white py-12 rounded-md">
           <Email>
             <div
               style={{

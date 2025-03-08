@@ -24,7 +24,7 @@ function Nav() {
         <div className="flex justify-between items-center relative ">
           <div>
             <Link to={"/"}>
-              <h2 className="font-bold text-2xl">
+              <h2 className="font-bold text-2xl text-[#FAFAFA]">
                 J <span className="text-5xl -mx-1  text-[#007BFF]">.</span> A
               </h2>
             </Link>
@@ -53,7 +53,7 @@ function Nav() {
             onClick={() => setOpenMenu(true)}
             className="sm:hidden cursor-pointer"
           >
-            <HiMenuAlt1 size={24} />
+            <HiMenuAlt1 className="text-[#FAFAFA]" size={24} />
           </button>
         </div>
         <div
@@ -61,7 +61,7 @@ function Nav() {
             openMenu
               ? " top-0 left-0 h-screen w-full z-50  bg-[#151418]"
               : " -top-[950px] left-0 h-screen w-full z-50  bg-[#151418]"
-          }   sm:hidden absolute transition-all ease-initial duration-500`}
+          }   sm:hidden fixed transition-all ease-initial duration-500`}
         >
           <div className="flex justify-between py-3 mt-3  z-40  sticky top-0  max-w-7xl mx-auto sm:px-4 px-4 md:px-6 lg:px-14  mb-10">
             <div className="flex  w-full justify-end">
@@ -86,7 +86,7 @@ function Nav() {
                   }
                   onClick={() => setOpenMenu(false)}
                 >
-                  <li className="py-7 px-4  hover:opacity-50 cursor-pointer  text-xl text-center">
+                  <li className="py-7 px-4 text-white  hover:opacity-50 cursor-pointer  text-xl text-center">
                     {link.label}
                   </li>
                 </a>
