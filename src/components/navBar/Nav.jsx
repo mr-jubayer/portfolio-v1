@@ -69,7 +69,7 @@ function Nav() {
                 className="s cursor-pointer"
                 onClick={() => setOpenMenu(false)}
               >
-                <IoClose size={30} />
+                <IoClose className="text-white" size={30} />
               </button>
             </div>
           </div>
