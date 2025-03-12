@@ -1,4 +1,4 @@
-import myPic from "../../../assets/me.jpg";
+import myPic from "../../../assets//mef.jpg";
 import { Link } from "react-router";
 import PrimaryButton from "../../btns/PrimaryButton";
 import SecondaryButton from "../../btns/SecondaryButton";

@@ -1,5 +1,7 @@
 import Heading from "../../heading/Heading";
 import { stackList } from "../../Skills";
+import myPic from "../../../assets/mef.jpg";
+
 import {
   Image,
   Technologies,
@@ -8,6 +10,7 @@ import {
   TechName,
   ContactWrapper,
 } from "./AboutEllements";
+import { motion } from "framer-motion";
 
 function About() {
   return (
@@ -15,9 +18,16 @@ function About() {
       <div className="max-w-6xl mx-auto sm:px-4 px-4 md:px-6 lg:px-14 text-black">
         <Heading title={"About Me"} />
         <div className="bg-white md:px-32 px-5 py-10 shadow-md rounded-md">
-          <Image
+          {/* <Image
             src="https://i.ibb.co.com/MkPHBBRK/Black-Pattern-Minimalist-Linked-In-Profile-Picture-removebg-preview.png"
             alt="me"
+          /> */}
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            src={myPic}
+            alt="my image"
+            className=" mx-auto ring-4 mb-8 ring-[#007BFF] md:h-60 h-44 aspect-square  rounded-full border-white  object-cover md:mt-10 sm:mt-20 mt-24"
           />
           <div className="AboutBio">
             Hey! I'm <strong> Jubayer Ahmed </strong> and I'm from Bangladesh. I
