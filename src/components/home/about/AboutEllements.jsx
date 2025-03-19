@@ -14,24 +14,23 @@ export const Technologies = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: -2rem;
+  gap: 8px;
 `;
 
 export const Tech = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100px;
-  min-width: 100px;
-  margin-bottom: 2rem;
+  max-width: 150px;
+  min-width: 150px;
+  background-color: white;
+  padding: 10px;
+  cursor: pointer;
 `;
 
 export const TechImg = styled.img`
-  height: 40px;
-  width: 40px;
-  padding-bottom: 5px;
+  height: 50px;
+  padding-bottom: 8px;
 `;
 
 export const TechName = styled.div`

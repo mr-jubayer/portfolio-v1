@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
+import { motion } from "motion/react";
 
 function Nav() {
   const location = useLocation();
@@ -13,22 +14,36 @@ function Nav() {
       id: "932874987239784",
       path: location.pathname.includes("projects") ? "/" : "home",
     },
-    { label: "About", id: "934539784", path: "about" },
     { label: "Projects", id: "932874939784", path: "projects" },
+    { label: "About", id: "934539784", path: "about" },
+
     { label: "Contact", id: "93287499784", path: "contact" },
   ];
 
   return (
-    <header className="   bg-[#151418]">
-      <nav className="py-3  z-40   max-w-7xl mx-auto sm:px-4 px-4 md:px-6 lg:px-14  ">
+    <header className="    z-50 relative">
+      <motion.nav
+        className="py-3  z-40   max-w-7xl mx-auto sm:px-4 px-4 md:px-6 lg:px-14  "
+        initial={{ opacity: 0, translateY: "-10px" }}
+        whileInView={{ opacity: 1, translateY: "0px" }}
+        transition={{
+          duration: 0.5,
+        }}
+      >
         <div className="flex justify-between items-center relative ">
-          <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 2,
+            }}
+          >
             <Link to={"/"}>
               <h2 className="font-bold text-2xl text-[#FAFAFA]">
                 J <span className="text-5xl -mx-1  text-[#007BFF]">.</span> A
               </h2>
             </Link>
-          </div>
+          </motion.div>
 
           <div className="sm:block hidden">
             <ul className="flex ">
@@ -94,7 +109,7 @@ function Nav() {
             </ul>
           </div>
         </div>
-      </nav>
+      </motion.nav>
     </header>
   );
 }

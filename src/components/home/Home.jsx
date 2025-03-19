@@ -12,7 +12,6 @@ function Home() {
 
       <Projects />
       <About />
-
       <Contact />
       <FixSocialIcon />
       <Footer />

@@ -15,10 +15,10 @@ export const stackList = [
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
     name: "ReactJS",
   },
-  //   {
-  //     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
-  //     name: "NextJs",
-  //   },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
+    name: "NextJs",
+  },
   //   {
   //     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
   //     name: "Typescript",
@@ -30,6 +30,10 @@ export const stackList = [
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
     name: "NodeJS",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
+    name: "ExpressJS",
   },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg",

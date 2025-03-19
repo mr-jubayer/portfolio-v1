@@ -5,13 +5,6 @@ export const ContactWrapper = styled.div`
 `;
 
 export const Email = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  row-gap: 1rem;
-
   span {
     font-size: 1rem;
     font-weight: 400;

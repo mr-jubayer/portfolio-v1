@@ -6,7 +6,7 @@ import { Toaster } from "react-hot-toast";
 function MainLayout() {
   return (
     <div className="  min-h-screen   relative " id="home">
-      <Nav />
+      {/* <Nav /> */}
 
       <Outlet />
       <Toaster position="bottom-right" reverseOrder={false} />
