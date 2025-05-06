@@ -35,10 +35,10 @@ import { motion } from "motion/react";
 
 // export default Contact;
 
-import { useState } from "react";
-import { ContactWrapper, Email } from "./ContactElements";
-import { MdContentCopy } from "react-icons/md";
 import { IconButton, Tooltip } from "@mui/material";
+import { useState } from "react";
+import { MdContentCopy } from "react-icons/md";
+import { ContactWrapper, Email } from "./ContactElements";
 
 import Heading from "../../heading/Heading";
 function Contact() {

@@ -1,13 +1,13 @@
-import ProjectList from "../ProjectList";
 import { motion } from "motion/react";
+import ProjectList from "../ProjectList";
 
 import {
+  BtnGroup,
   Card,
   CardLeft,
   CardRight,
-  TechCardContainer,
   TechCard,
-  BtnGroup,
+  TechCardContainer,
 } from "./ProjectCardElements";
 function ProjectCard() {
   return (

@@ -34,23 +34,6 @@ const ProjectList = [
     demo_url: "https://nexus-3e632.web.app/",
     github_url: "https://github.com/jubayerahmed46/Nexus_Frontend",
   },
-  {
-    id: 9,
-    title: "Where Is It?",
-    img: "https://i.ibb.co.com/7JN3yF30/whereisit-PNG.png",
-    tech_stack: [
-      "React",
-      "MongoDB",
-      "Tailwind CSS",
-      "Express.js",
-      "React Router",
-      "Firebase ",
-    ],
-    description:
-      "Where Is It? is a lost and found platform where users can report lost items, browse found items, and connect with others to recover their belongings. The platform uses real-time location tracking and filtering for efficient item discovery.",
-    demo_url: "https://whereisit-84e04.web.app/",
-    github_url: "https://github.com/mr-jubayer/WhereIsIt-frontend",
-  },
 ];
 
 export default ProjectList;

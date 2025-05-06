@@ -1,6 +1,6 @@
-import { FaLinkedin, FaGithub } from "react-icons/fa";
 import styled from "@emotion/styled";
 import { motion } from "motion/react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const SocialContainer = styled.div`
   position: fixed;
@@ -60,7 +60,7 @@ function FixSocialIcon() {
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, translateX: "-20px" }}
-            animate={{
+            whileInView={{
               scale: 2,
               opacity: 1,
               transition: { duration: 2 },
@@ -81,7 +81,7 @@ function FixSocialIcon() {
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, translateX: "-20px" }}
-            animate={{
+            whileInView={{
               scale: 2,
               opacity: 1,
               transition: { duration: 2 },

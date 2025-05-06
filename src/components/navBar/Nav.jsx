@@ -1,8 +1,8 @@
-import { Link, useLocation } from "react-router";
+import { motion } from "motion/react";
+import { useState } from "react";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
-import { useState } from "react";
-import { motion } from "motion/react";
+import { Link, useLocation } from "react-router";
 
 function Nav() {
   const location = useLocation();
@@ -24,26 +24,20 @@ function Nav() {
     <header className="    z-50 relative">
       <motion.nav
         className="py-3  z-40   max-w-7xl mx-auto sm:px-4 px-4 md:px-6 lg:px-14  "
-        initial={{ opacity: 0, translateY: "-10px" }}
-        whileInView={{ opacity: 1, translateY: "0px" }}
+        initial={{ translateY: "-10px" }}
+        animate={{ translateY: "0px" }}
         transition={{
           duration: 0.5,
         }}
       >
         <div className="flex justify-between items-center relative ">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              duration: 2,
-            }}
-          >
+          <div>
             <Link to={"/"}>
               <h2 className="font-bold text-2xl text-[#FAFAFA]">
                 J <span className="text-5xl -mx-1  text-[#007BFF]">.</span> A
               </h2>
             </Link>
-          </motion.div>
+          </div>
 
           <div className="sm:block hidden">
             <ul className="flex ">

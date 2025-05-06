@@ -6,7 +6,7 @@ import Footer from "./footer/Footer";
 import Wave from "./Wave";
 function Home() {
   return (
-    <div>
+    <div className="font">
       <Banner />
       <Wave />
 

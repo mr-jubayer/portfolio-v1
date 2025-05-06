@@ -1,9 +1,9 @@
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { FaGithub } from "react-icons/fa";
+import { LuExternalLink } from "react-icons/lu";
 import { useParams } from "react-router";
 import projects from "../projects";
-import { LuExternalLink } from "react-icons/lu";
-import { FaGithub } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 function Details() {
   const { name } = useParams();

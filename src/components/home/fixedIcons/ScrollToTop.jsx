@@ -1,7 +1,6 @@
-import { IconButton, Tooltip, styled } from "@mui/material";
-import React, { useState, useEffect } from "react";
+import { IconButton, styled } from "@mui/material";
+import { useEffect, useState } from "react";
 import { MdKeyboardArrowUp } from "react-icons/md";
-import { animateScroll as scroll } from "react-scroll";
 
 const StyledIconButton = styled(IconButton)`
   position: fixed;
@@ -19,13 +18,7 @@ const StyledArrowIcon = styled(MdKeyboardArrowUp)`
 `;
 
 function ScrollToTop() {
-  const [open, setOpen] = React.useState(false);
   const [shouldRender, setShouldRender] = useState(false);
-
-  const handleClick = () => {
-    setOpen(false);
-    scroll.scrollToTop({ duration: 0 });
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,21 +31,11 @@ function ScrollToTop() {
 
   return (
     shouldRender && (
-      <Tooltip
-        title="Scroll to top"
-        placement="top"
-        open={open}
-        onOpen={() => setOpen(true)}
-        onClose={() => setOpen(false)}
-      >
-        <StyledIconButton
-          size="large"
-          aria-label="scroll to top"
-          onClick={handleClick}
-        >
+      <a href="#home">
+        <StyledIconButton size="large" aria-label="scroll to top">
           <StyledArrowIcon fontSize={40} />
         </StyledIconButton>
-      </Tooltip>
+      </a>
     )
   );
 }

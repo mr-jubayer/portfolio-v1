@@ -1,13 +1,13 @@
-import myPic from "../../../assets//mef.jpg";
+import { motion } from "motion/react";
 import { Link } from "react-router";
+import myPic from "../../../assets//me.jpg";
 import PrimaryButton from "../../btns/PrimaryButton";
 import SecondaryButton from "../../btns/SecondaryButton";
-import { motion } from "motion/react";
 import Nav from "../../navBar/Nav";
 
 function Banner() {
   return (
-    <div className="bg-[#151418]">
+    <div className="bg-[#151418]" id="#home">
       <Nav />
       <div className="   relative">
         <div className="h-[600px]  rounded-bl-full aspect-square bg-[#1e1d22] absolute md:-top-96 -top-[530px] -right-0 " />
@@ -15,14 +15,14 @@ function Banner() {
           <div className="grid  justify-center">
             <div>
               <motion.img
-                initial={{ opacity: 0, translateY: "-20px" }}
-                whileInView={{ opacity: 1, translateY: "0px" }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 transition={{
                   duration: 2,
                 }}
                 src={myPic}
                 alt="my image"
-                className=" md:h-60 h-44 aspect-square  rounded-full border-white border-4 object-cover md:mt-10 sm:mt-20 mt-24"
+                className=" md:h-72 h-56 aspect-square  rounded-full border-white border-4 object-cover md:mt-10 sm:mt-20 mt-24"
               />
             </div>
           </div>
